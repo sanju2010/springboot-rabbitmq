@@ -1,2 +1,16 @@
-# springboot-rabbitmq
-Sample springboot and rabbitmq project
+WEB console enabling
+--------------------------------------
+Go through the following steps to enable web console for rabbitmq.
+
+Step 1: Open rabbitmq command prompt from start.
+
+Step 2: Through that command prompt need to create new user with admin privilege.
+		>rabbitmqctl add_user username password
+
+Step 3: Then tag administrator privilege to that user.
+		>rabbitmqctl set_user_tags username administrator
+
+Step 4: Restart the rabbitmq service.
+
+Step 5: Then open the management console in browser as new user
+		<localhost>or<ip>:15672
